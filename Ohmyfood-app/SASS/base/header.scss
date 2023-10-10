@@ -1,0 +1,46 @@
+@import '../components/mixin.scss';
+@import '../themes/font.scss';
+@import '../themes/color.scss';
+
+body{
+    margin: 0;
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+
+    width: auto;
+    margin: 0;
+    padding: 14px 89px 13px 89px;
+
+    @include header-shadow;
+    .logo{
+        width: 197px;
+        height: 36px;  
+    }
+}
+
+.localisation{
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    background-color: $background-grey-2;
+    .logo-localisation{
+        display: flex;
+        align-items: center;
+        color: #353535;
+    }
+}
+
+header p{
+    padding-left: 17px;
+    font-family: $font-text;
+    color: #353535
+}
+
+
+
+
+
+
