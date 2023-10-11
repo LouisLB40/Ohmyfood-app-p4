@@ -1,0 +1,17 @@
+@import '../components/mixin.scss';
+@import '../themes/color.scss';
+
+
+.btn {
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--Button-Gradient, linear-gradient(193deg, $secondary-color -11.44%, $primary-color 123.93%));
+    border: none;
+    color: white;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 14px;
+    
+    @include btn-shadow;
+}

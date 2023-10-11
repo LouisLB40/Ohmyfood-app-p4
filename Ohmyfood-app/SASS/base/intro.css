@@ -1,0 +1,25 @@
+.btn {
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  background: var(--Button-Gradient, linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%));
+  border: none;
+  color: white;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 14px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto";
+  background-color: #F6F6F6;
+  padding-bottom: 50px;
+}
+.intro_title {
+  margin-bottom: 0;
+}/*# sourceMappingURL=intro.css.map */

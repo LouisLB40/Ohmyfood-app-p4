@@ -11,48 +11,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b577f9b5d7.js" crossorigin="anonymous"></script>
 </head>
   
 <body>
-    
         <header>
             <h1><img src="../images/logo/ohmyfood.png" alt="ohmyfood" class="logo"></h1>
             <div class="localisation">
                 <i class="fa-solid fa-location-dot logo-localisation"></i>
-                <p>Paris, Belleville</p>
+                <input type="search" placeholder="Paris, Belleville"/>
             </div>
         </header>
         <main>
-            <div class="reserver">
-                <h2>Réservez le menu qui vous convient</h2>
-                <p>Découvrez des restaurants d'exception, sélectionnés pas nos soins.</p>
-                <button>Explorer nos restaurants</button>
+            <div class="intro">
+                <h2 class="intro_title">Réservez le menu qui vous convient</h2>
+                <p class="intro_text">Découvrez des restaurants d'exception, sélectionnés pas nos soins.</p>
+                <button class="btn">Explorer nos restaurants</button>
             </div>
-            <section>
-                <div>
-                    <h2>Fonctionnement</h2>
-                        <ul>
-                            <li>Choisissez un restaurant</li>
-                            <li>Comparez votre menu</li>
-                            <li>Dégustez au restaurant</li>
-                        </ul>
-                </div>
-            </section>
-            <section>
-                <h2>Restaurants</h2>
-                    <div>
-                        <a href="#">
-                            <article>
-                                <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat">
-                                <h3>La palette du goût</h3>
-                                <p>Ménilmontant</p>
-                                <i class="fa-regular fa-heart"></i>
-                            </article>
-                        </a>
+            <div class="container">
+                <section>
+                    <div class="fonction">
+                        <h2>Fonctionnement</h2>
+                            <ul class="counter">
+                                <li><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
+                                <li><i class="fa-solid fa-list"></i>Comparez votre menu</li>
+                                <li><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
+                            </ul>
                     </div>
-            </section>
+                </section>
+                <section>
+                    <h2>Restaurants</h2>
+                        <div>
+                            <a href="#">
+                                <article>
+                                    <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat">
+                                    <h3>La palette du goût</h3>
+                                    <p>Ménilmontant</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </article>
+                            </a>
+                        </div>
+                </section>
+            </div>
         </main>
         <footer>
             <img src="../images/logo/ohmyfood.png" alt="ohmyfood">
@@ -60,7 +61,6 @@
             <p><i class="fa-solid  fa-handshake-angle"></i>Devenir partenaire</p>
             <p>Mentions légales</p>
             <p>Contract</p>
-        </footer>
-    
+        </footer>    
 </body>
 </html>

@@ -16,8 +16,8 @@ header h1{
 
     @include header-shadow;
     .logo{
-        width: 197px;
-        height: 36px;  
+        width: 162px;
+        height: 25px;  
     }
 }
 
@@ -26,17 +26,25 @@ header h1{
     display: flex;
     justify-content: center;
     background-color: $background-grey-2;
+    padding-top: 10px;
+    padding-bottom: 10px;
     .logo-localisation{
         display: flex;
         align-items: center;
         color: #353535;
+        width: 12px;
+        height: 16px;
     }
 }
 
-header p{
+header input{
+    width: 35%;
     padding-left: 17px;
     font-family: $font-text;
-    color: #353535
+    color: #353535;
+    font-weight: bolder;
+    background-color: $background-grey-2;
+    border: 0;
 }
 
 

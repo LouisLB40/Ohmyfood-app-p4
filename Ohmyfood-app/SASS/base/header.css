@@ -11,8 +11,8 @@ header h1 {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 header h1 .logo {
-  width: 197px;
-  height: 36px;
+  width: 162px;
+  height: 25px;
 }
 
 .localisation {
@@ -20,15 +20,23 @@ header h1 .logo {
   display: flex;
   justify-content: center;
   background-color: #EAEAEA;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .localisation .logo-localisation {
   display: flex;
   align-items: center;
   color: #353535;
+  width: 12px;
+  height: 16px;
 }
 
-header p {
+header input {
+  width: 35%;
   padding-left: 17px;
   font-family: "Roboto";
   color: #353535;
+  font-weight: bolder;
+  background-color: #EAEAEA;
+  border: 0;
 }/*# sourceMappingURL=header.css.map */
