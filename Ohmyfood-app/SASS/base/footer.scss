@@ -1,0 +1,28 @@
+@import '../themes/color.scss';
+@import '../themes/font.scss';
+
+footer {
+    background-color: $background-footer;
+    color: white;
+    padding: 22px 25px;
+    font-family: $font-text;
+    p{
+        margin: 0;
+        margin-bottom: 7px;
+    }
+    .title_footer {
+        font-family: $font-title;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+        margin-bottom: 16px;
+    }
+    .fa-utensils {
+        width: 25px;
+    }
+    .fa-handshake-angle {
+        width: 25px;
+    }
+}
+
