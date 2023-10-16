@@ -1,8 +1,7 @@
 body {
   margin: 0;
 }
-
-header h1 {
+body header .header-home {
   display: flex;
   justify-content: center;
   width: auto;
@@ -10,33 +9,30 @@ header h1 {
   padding: 14px 89px 13px 89px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
-header h1 .logo {
+body header .header-home .logo {
   width: 162px;
   height: 25px;
 }
-
-.localisation {
-  margin-top: 2px;
-  display: flex;
-  justify-content: center;
-  background-color: #EAEAEA;
-  padding-top: 10px;
-  padding-bottom: 10px;
+body header .header-home h1 {
+  margin: 0;
 }
-.localisation .logo-localisation {
+body header .header-page {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  color: #353535;
-  width: 12px;
-  height: 16px;
+  padding: 14px 89px 13px 17px;
+  gap: 42px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
-
-header input {
-  width: 35%;
-  padding-left: 17px;
-  font-family: "Roboto";
+body header .header-page .logo {
+  width: 162px;
+  height: 25px;
+  padding: 0px 19px 0px 16px;
+}
+body header .header-page h1 {
+  margin: 0;
+}
+body header .header-page .fa-arrow-left {
+  font-size: 20px;
   color: #353535;
-  font-weight: bolder;
-  background-color: #EAEAEA;
-  border: 0;
 }/*# sourceMappingURL=header.css.map */

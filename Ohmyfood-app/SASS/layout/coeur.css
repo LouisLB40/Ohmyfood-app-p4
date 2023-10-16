@@ -1,0 +1,39 @@
+.coeur-place {
+  position: relative;
+}
+.coeur-place .far, .coeur-place .fas {
+  font-size: 25px;
+}
+.coeur-place .far {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  color: black;
+  transition: 1s;
+}
+.coeur-place .fas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: #FF79DA;
+  opacity: 0;
+  transition: 1s;
+}
+.coeur-place input {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 3;
+}
+.coeur-place input:checked + label .far {
+  opacity: 0;
+  transition: 1s;
+}
+.coeur-place input:checked + label .fas {
+  opacity: 1;
+  transition: 1s;
+}/*# sourceMappingURL=coeur.css.map */
