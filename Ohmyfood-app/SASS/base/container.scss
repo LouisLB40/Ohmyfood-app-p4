@@ -22,10 +22,10 @@ body{
             color: #353535;
             width: 12px;
             height: 16px;
-            margin-left: 10px;
+            margin-left: 50px;
         }
         input{
-            width: 35%;
+            
             padding-left: 17px;
             font-family: $font-text;
             color: #353535;
@@ -275,7 +275,50 @@ body{
     }    
 }
 
-
+@media (min-width: 1024px){
+    .restaurant-main{
+        .intro{
+            .btn{
+                width: 210px;
+            }
+        }
+        .container{
+            .fonction{
+                margin-left: 180px;
+                margin-right: 180px;
+                .counter{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    li{
+                        width: 30%;
+                    }
+                }
+            }
+            #restaurant{
+                padding-left: 180px;
+                padding-right: 180px;
+                .restaurant_card{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-flow: row wrap;
+                    a{
+                        width: 45%;
+                        margin-bottom: 50px;
+                        .card{
+                            img{
+                                height: 172px;
+                            }
+                            #coeur{
+                                margin-left: 70%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 

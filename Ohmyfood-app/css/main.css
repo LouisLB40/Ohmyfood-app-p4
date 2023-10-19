@@ -56,7 +56,10 @@ body header .header-page .fa-arrow-left {
   top: 0;
   left: 0;
   z-index: 1;
-  color: #FF79DA;
+  background: linear-gradient(170deg, #ff79d9 5%, #9256dc 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   transition: 1s;
 }
@@ -112,10 +115,9 @@ body {
   color: #353535;
   width: 12px;
   height: 16px;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 .restaurant-main .localisation input {
-  width: 35%;
   padding-left: 17px;
   font-family: "Roboto";
   color: #353535;
@@ -366,6 +368,42 @@ body {
   padding-bottom: 40px;
 }
 
+@media (min-width: 1024px) {
+  .restaurant-main .intro .btn {
+    width: 210px;
+  }
+  .restaurant-main .container .fonction {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+  .restaurant-main .container .fonction .counter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .restaurant-main .container .fonction .counter li {
+    width: 30%;
+  }
+  .restaurant-main .container #restaurant {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+  .restaurant-main .container #restaurant .restaurant_card {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+  .restaurant-main .container #restaurant .restaurant_card a {
+    width: 45%;
+    margin-bottom: 50px;
+  }
+  .restaurant-main .container #restaurant .restaurant_card a .card img {
+    height: 172px;
+  }
+  .restaurant-main .container #restaurant .restaurant_card a .card #coeur {
+    margin-left: 70%;
+  }
+}
 footer {
   background-color: #353535;
   color: white;
@@ -410,7 +448,10 @@ footer .fa-handshake-angle {
   top: 0;
   left: 0;
   z-index: 1;
-  color: #FF79DA;
+  background: linear-gradient(170deg, #ff79d9 5%, #9256dc 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   transition: 1s;
 }
