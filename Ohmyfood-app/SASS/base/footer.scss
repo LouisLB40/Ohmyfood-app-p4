@@ -1,28 +1,48 @@
 @import '../themes/color.scss';
 @import '../themes/font.scss';
 
-footer {
+.footer{
     background-color: $background-footer;
     color: white;
-    padding: 22px 25px;
-    font-family: $font-text;
-    p{
-        margin: 0;
-        margin-bottom: 7px;
+  padding: 1em 0em 1em 0em;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row-reverse;
+  padding-right: 7em;
+  align-items: center;
+  }
+  &_title{
+    font-family: $font-title, cursive;
+    padding-left: 2.25em;
+    font-size: 18px;  
     }
-    .title_footer {
-        font-family: $font-title;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal; 
-        margin-bottom: 16px;
+    &_logo{
+        display: flex;
+        align-items: baseline;
+        gap: 0.5em;
     }
-    .fa-utensils {
-        width: 25px;
-    }
-    .fa-handshake-angle {
-        width: 25px;
-    }
+}
+
+footer a{
+    color: white;
+  }
+
+.footer ul{
+  @media screen and (min-width: 1024px) {
+    display: flex; 
+}
+}
+
+.footer li{
+  
+  @media screen and (min-width: 1024px){
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+  }
+}
+
+.footer h3{
+  font-weight: 400;
+  font-size: 16px;
 }
 

@@ -6,7 +6,6 @@ body header .header-home {
   justify-content: center;
   width: auto;
   margin: 0;
-  padding: 14px 89px 13px 89px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 body header .header-home .logo {
@@ -16,25 +15,17 @@ body header .header-home .logo {
 body header .header-home h1 {
   margin: 0;
 }
-body header .header-page {
+body .banner {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 14px 89px 13px 17px;
-  gap: 42px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
-body header .header-page .logo {
-  width: 162px;
-  height: 25px;
-  padding: 0px 19px 0px 16px;
+body .banner_arrow {
+  padding-left: 1em;
+  font-size: 1.5em;
 }
-body header .header-page h1 {
-  margin: 0;
-}
-body header .header-page .fa-arrow-left {
-  font-size: 20px;
-  color: #353535;
+body .banner_title {
+  flex-basis: 90%;
+  text-align: center;
 }
 
 .coeur-place {
@@ -219,7 +210,7 @@ body {
   color: #008766;
   margin-right: 15px;
 }
-.restaurant-main .container #restaurant a .card #coeur {
+.restaurant-main .container #restaurant a .card .coeur {
   grid-area: 2/2/3/3;
   margin-left: 230px;
   margin-top: 17px;
@@ -254,7 +245,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.top-page .restaurant-top-page .restaurant-top-page-title {
+.top-page .restaurant-top-page-title {
   position: relative;
   margin-top: -3em;
   border-radius: 25px 25px 0 0;
@@ -263,19 +254,20 @@ body {
   grid-template-columns: 4fr 1fr;
   grid-template-rows: 1fr;
 }
-.top-page .restaurant-top-page .restaurant-top-page-title h1 {
+.top-page .restaurant-top-page-title h1 {
   font-family: "Shrikhand";
   font-size: 26px;
   padding-top: 10px;
   margin-left: 1rem;
 }
-.top-page .restaurant-top-page .restaurant-top-page-title #coeur {
+.top-page .restaurant-top-page-title .coeur {
   grid-area: 1/2/2/3;
   top: 35%;
 }
 .top-page section {
   margin: 0 10px 0 10px;
   margin-bottom: 40px;
+  animation: slidefood 3s;
 }
 .top-page section .entree h2 {
   font-family: "Roboto";
@@ -400,33 +392,81 @@ body {
   .restaurant-main .container #restaurant .restaurant_card a .card img {
     height: 172px;
   }
-  .restaurant-main .container #restaurant .restaurant_card a .card #coeur {
+  .restaurant-main .container #restaurant .restaurant_card a .card .coeur {
     margin-left: 70%;
   }
+  .top-page {
+    background-color: white;
+  }
+  .top-page .carte {
+    position: relative;
+    top: 20px;
+    background-color: #F6F6F6;
+    height: 100%;
+    margin: 0px 15% 20px 15%;
+    border-radius: 25px 25px 0 0;
+  }
+  .top-page .carte .restaurant-top-page-title {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px 25px 0px;
+  }
+  .top-page .carte .restaurant-top-page-title .coeur-place {
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+  .top-page .carte .space-around {
+    margin-left: 210px;
+    margin-right: 210px;
+  }
+  .top-page .carte .btn {
+    width: 20%;
+  }
 }
-footer {
+.footer {
   background-color: #353535;
   color: white;
-  padding: 22px 25px;
-  font-family: "Roboto";
+  padding: 1em 0em 1em 0em;
 }
-footer p {
-  margin: 0;
-  margin-bottom: 7px;
+@media screen and (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 7em;
+    align-items: center;
+  }
 }
-footer .title_footer {
-  font-family: "Shrikhand";
+.footer_title {
+  font-family: "Shrikhand", cursive;
+  padding-left: 2.25em;
   font-size: 18px;
-  font-style: normal;
+}
+.footer_logo {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+}
+
+footer a {
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer ul {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer li {
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+  }
+}
+
+.footer h3 {
   font-weight: 400;
-  line-height: normal;
-  margin-bottom: 16px;
-}
-footer .fa-utensils {
-  width: 25px;
-}
-footer .fa-handshake-angle {
-  width: 25px;
+  font-size: 16px;
 }
 
 .coeur-place {
@@ -470,4 +510,30 @@ footer .fa-handshake-angle {
 .coeur-place input:checked + label .fas {
   opacity: 1;
   transition: 1s;
+}
+
+@keyframes slidefood {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+h1 {
+  text-align: center;
+  font-family: "Shrikhand", cursive;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
 }/*# sourceMappingURL=main.css.map */

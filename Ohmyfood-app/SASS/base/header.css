@@ -6,7 +6,6 @@ body header .header-home {
   justify-content: center;
   width: auto;
   margin: 0;
-  padding: 14px 89px 13px 89px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 body header .header-home .logo {
@@ -16,23 +15,15 @@ body header .header-home .logo {
 body header .header-home h1 {
   margin: 0;
 }
-body header .header-page {
+body .banner {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 14px 89px 13px 17px;
-  gap: 42px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
-body header .header-page .logo {
-  width: 162px;
-  height: 25px;
-  padding: 0px 19px 0px 16px;
+body .banner_arrow {
+  padding-left: 1em;
+  font-size: 1.5em;
 }
-body header .header-page h1 {
-  margin: 0;
-}
-body header .header-page .fa-arrow-left {
-  font-size: 20px;
-  color: #353535;
+body .banner_title {
+  flex-basis: 90%;
+  text-align: center;
 }/*# sourceMappingURL=header.css.map */

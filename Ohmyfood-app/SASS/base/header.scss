@@ -10,7 +10,6 @@ body{
             justify-content: center;
             width: auto;
             margin: 0;
-            padding: 14px 89px 13px 89px;
             @include header-shadow;
             .logo{
             width: 162px;
@@ -20,27 +19,19 @@ body{
                 margin: 0;
             }
         }
-        .header-page{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 14px 89px 13px 17px;
-            gap: 42px;
-            @include header-shadow;
-            .logo{
-                width: 162px;
-                height: 25px;
-                padding: 0px 19px 0px 16px;  
-            }
-            h1{
-                margin: 0;
-            }
-            .fa-arrow-left{
-                font-size: 20px;
-                color: $background-footer;
-            }
+    }
+    .banner {
+        display: flex;
+        align-items: center;
+        &_arrow {
+          padding-left: 1em;
+          font-size: 1.5em;
         }
-    } 
+        &_title {
+          flex-basis: 90%;
+          text-align: center;
+        }
+      }
 }
 
 
