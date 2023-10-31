@@ -1,44 +1,23 @@
-.coeur-place {
-  position: relative;
-}
-.coeur-place .far, .coeur-place .fas {
-  font-size: 25px;
-}
-.coeur-place .far {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  color: black;
-  transition: 1s;
-}
-.coeur-place .fas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background: linear-gradient(170deg, #ff79d9 5%, #9256dc 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
+.my-heart-full {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
   -webkit-text-fill-color: transparent;
-  opacity: 0;
-  transition: 1s;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
-.coeur-place input {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 3;
-}
-.coeur-place input:checked + label .far {
-  opacity: 0;
-  transition: 1s;
-}
-.coeur-place input:checked + label .fas {
+
+.my-heart-full:hover {
   opacity: 1;
-  transition: 1s;
+  background-position: 0% 100%;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  transition: opacity 1s ease-in-out;
+}
+
+.fa-heart {
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.2em;
 }
 
 .btn {
@@ -140,70 +119,81 @@ body {
 .restaurant-main .container .fa-list {
   color: #7e7e7e;
 }
-.restaurant-main .container #restaurant {
-  background-color: #F6F6F6;
-  padding: 18px;
-}
-.restaurant-main .container #restaurant h2 {
-  padding-left: 6px;
-}
-.restaurant-main .container #restaurant a {
-  height: 251px;
-  text-decoration: none;
-}
-.restaurant-main .container #restaurant a .card {
-  height: 100%;
-  margin-bottom: 20px;
-  display: grid;
-}
-.restaurant-main .container #restaurant a .card_content {
-  grid-area: 2/1/3/3;
-  padding-left: 13px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  background-color: #FFFFFF;
-}
-.restaurant-main .container #restaurant a .card_txt {
-  color: black;
-}
-.restaurant-main .container #restaurant a .card .new {
-  grid-area: 1/2;
-  background-color: #99E2D0;
-  width: 60px;
-  height: 15px;
-  text-align: center;
-  padding: 7px;
-  margin: 13px auto;
-  border-radius: 3px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #008766;
-  margin-right: 15px;
-}
-.restaurant-main .container #restaurant a .card .coeur {
-  grid-area: 2/2/3/3;
-  margin-left: 230px;
-  margin-top: 17px;
-}
-.restaurant-main .container #restaurant a .card_txt h3 {
-  margin-bottom: 0;
-}
-.restaurant-main .container #restaurant a .card_txt p {
-  margin-top: 0;
-}
-.restaurant-main .container #restaurant a .card img {
-  grid-area: 1/1/2/3;
-  width: 100%;
-  height: 140px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-.restaurant-main .container #restaurant a .restaurant_card {
+.restaurant-main .container .restaurants {
   display: flex;
   flex-direction: column;
+  margin-top: 5em;
+  background-color: #F6F6F6;
+  padding: 2em 0em 3em 0em;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-main .container .restaurants {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+}
+.restaurant-main .container .restaurants__title {
+  padding-left: 2em;
+}
+.restaurant-main .container .restaurants__card {
+  border-radius: 2em;
+  margin: 1em;
+  position: relative;
+  background: #ffffff;
+  height: 16em;
+}
+.restaurant-main .container .restaurants_image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  width: 100%;
+  height: 100%;
+  max-height: 11em;
+}
+.restaurant-main .container .restaurants_name {
+  padding-left: 1.25em;
+  display: flex;
+}
+.restaurant-main .container .restaurants_name h3 {
+  display: flex;
+  align-items: center;
+}
+.restaurant-main .container .restaurants_name i {
+  right: 1em;
+}
+.restaurant-main .container .restaurant_name h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.restaurant-main .container .subtile_card p {
+  font-size: 17px;
+  font-weight: 300;
+}
+.restaurant-main .container .new {
+  color: #008766;
+  background-color: #99E2D0;
+  border: 5px solid #99E2D0;
+  border-radius: 5px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  width: 60px;
+}
+.restaurant-main .container .subtile_card {
+  padding-left: 1.25em;
+}
+.restaurant-main .container .restaurant_descript {
+  line-height: 0;
+}
+.restaurant-main .container .restaurants_container {
   box-sizing: border-box;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-main .container .restaurants_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .top-page {
@@ -230,9 +220,9 @@ body {
   padding-top: 10px;
   margin-left: 1rem;
 }
-.top-page .restaurant-top-page-title .coeur {
-  grid-area: 1/2/2/3;
-  top: 35%;
+.top-page .restaurant-top-page-title i {
+  right: auto;
+  padding-left: 1em;
 }
 .top-page section {
   margin: 0 10px 0 10px;
@@ -346,25 +336,6 @@ body {
   .restaurant-main .container .fonction .counter li {
     width: 30%;
   }
-  .restaurant-main .container #restaurant {
-    padding-left: 180px;
-    padding-right: 180px;
-  }
-  .restaurant-main .container #restaurant .restaurant_card {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-  }
-  .restaurant-main .container #restaurant .restaurant_card a {
-    width: 45%;
-    margin-bottom: 50px;
-  }
-  .restaurant-main .container #restaurant .restaurant_card a .card img {
-    height: 172px;
-  }
-  .restaurant-main .container #restaurant .restaurant_card a .card .coeur {
-    margin-left: 70%;
-  }
   .top-page {
     background-color: white;
   }
@@ -380,10 +351,6 @@ body {
     display: flex;
     justify-content: center;
     padding: 25px 0px 25px 0px;
-  }
-  .top-page .carte .restaurant-top-page-title .coeur-place {
-    margin-top: 15px;
-    margin-left: 30px;
   }
   .top-page .carte .space-around {
     margin-left: 210px;

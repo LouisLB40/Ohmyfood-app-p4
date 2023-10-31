@@ -16,6 +16,9 @@
 </head>
   
 <body>
+    <div class="section">
+        <span class="loader loader-bars"></span>
+    </div>
         <header>
             <div class="header-home">
                 <h1><img src="../images/logo/ohmyfood.png" alt="ohmyfood" class="logo"></h1>
@@ -43,76 +46,97 @@
                                 </ul>
                         </div>
                     </section>
-                    <section id="restaurant">
-                        <h2>Restaurants</h2>
-                            <div class="restaurant_card">
+                    <section class="restaurants">
+                        <div class="restaurants__title">
+                            <h2>Restaurants</h2>
+                        </div>
+                        <div class="restaurants_container">
+                            <div class="restaurants__card">
                                 <a href="../restaurants/page-restaurant-1.html">
-                                    <div class="card">
-                                        <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat">
-                                        <p class="new">Nouveau</p>
-                                        <div class="card_content"> 
-                                            <div class="card_txt">
-                                                <h3>La palette du goût</h3>
-                                                <p>Ménilmontant</p>
-                                            </div>
+                                    <div class="button_card">
+                                        <span class="new">Nouveau</span>
+                                    </div>
+                                    <img class="restaurants_image"
+                                        src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                        alt="photo de restaurant chic">
+                                    <div class="restaurant_descript">
+                                        <div class="restaurants_name">
+                                            <h3>La palette du gout
+                                                <i class="fa-regular fa-heart"></i>
+                                                <i class="fa-solid fa-heart my-heart-full"></i>
+                                            </h3>
                                         </div>
-                                        <div class="coeur-place coeur">
-                                            <input type="checkbox">                                       
-                                            <label for="#"><i class="fas fa-heart"></i>
-                                            <i class="far fa-heart"></i></label>
+                                        <div class="subtile_card">
+                                            <p>Ménilmontant</p>
                                         </div>
                                     </div>
                                 </a>
+                            </div>
+                
+                            <div class="restaurants__card">
                                 <a href="../restaurants/page-restaurant-2.html">
-                                    <article class="card">
-                                        <img src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo d'un plat">
-                                        <p class="new">Nouveau</p>
-                                        <div class="card_content"> 
-                                            <div class="card_txt">
-                                                <h3>La note enchantée</h3>
-                                                <p>Charonne</p>
-                                            </div>
+                                    <div class="button_card">
+                                        <span class="new">Nouveau</span>
+                                    </div>
+                                    <img class="restaurants_image" src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                                        alt="image d'une assiette magnifique du restaurant">
+                                    <div class="restaurant_descript">
+                                        <div class="restaurants_name">
+                                            <h3>La note enchantée
+                                                <i class="fa-regular fa-heart"></i>
+                                                <i class="fa-solid fa-heart my-heart-full"></i>
+                                            </h3>
                                         </div>
-                                        <div class="coeur-place coeur">
-                                            <input type="checkbox">                                       
-                                            <label for="#"><i class="fas fa-heart"></i>
-                                            <i class="far fa-heart"></i></label>
+                                        <div class="subtile_card">
+                                            <p>Charonne</p>
                                         </div>
-                                    </article>
-                                </a>
-                                <a href="../restaurants/page-restaurant-3.html">
-                                    <article class="card">
-                                        <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'un plat">
-                                        <div class="card_content"> 
-                                            <div class="card_txt">
-                                                <h3>À la française</h3>
-                                                <p>Cité Rouge</p>
-                                            </div>
-                                        </div>
-                                        <div class="coeur-place coeur">
-                                            <input type="checkbox">                                       
-                                            <label for="#"><i class="fas fa-heart"></i>
-                                            <i class="far fa-heart"></i></label>
-                                        </div>
-                                    </article>
-                                </a>
-                                <a href="../restaurants/page-restaurant-4.html">
-                                    <article class="card">
-                                        <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'un plat">
-                                        <div class="card_content"> 
-                                            <div class="card_txt">
-                                                <h3>Le délice des sens</h3>
-                                                <p>Folie-Méricourt</p>
-                                            </div>
-                                        </div>
-                                        <div class="coeur-place coeur">
-                                            <input type="checkbox">                                       
-                                            <label for="#"><i class="fas fa-heart"></i>
-                                            <i class="far fa-heart"></i></label>
-                                        </div>
-                                    </article>
+                                    </div>
                                 </a>
                             </div>
+                            <div class="restaurants__card">
+                                <a href="../restaurants/page-restaurant-3.html">
+                                    <div class="button_card">
+                
+                                    </div>
+                                    <img class="restaurants_image"
+                                        src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                                        alt="image d'une belle assiette bien dressé ">
+                                    <div class="restaurant_descript">
+                                        <div class="restaurants_name">
+                                            <h3> À la française
+                                                <i class="fa-regular fa-heart"></i>
+                                                <i class="fa-solid fa-heart my-heart-full"></i>
+                                            </h3>
+                                        </div>
+                                        <div class="subtile_card">
+                                            <p>Citée Rouge</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                
+                            <div class="restaurants__card">
+                                <a href="../restaurants/page-restaurant-4.html">
+                                    <div class="button_card">
+                
+                                    </div>
+                                    <img class="restaurants_image"
+                                        src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                        alt="image d'une belle assiette en forme de bateau bien dressé">
+                                    <div class="restaurant_descript">
+                                        <div class="restaurants_name">
+                                            <h3>Le delice des sens
+                                                <i class="fa-regular fa-heart"></i>
+                                                <i class="fa-solid fa-heart my-heart-full"></i>
+                                            </h3>
+                                        </div>
+                                        <div class="subtile_card">
+                                            <p>Folie-Mericourt</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </section>
                 </div>
             </div>
@@ -146,7 +170,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="mailto:louis.lb.dev@gmail.com">
                             <h3>Contact</h3>
                         </a>
                     </li>

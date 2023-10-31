@@ -87,68 +87,88 @@ body{
         .fa-list {
             color: #7e7e7e;
         }
-        #restaurant  {
+        .restaurants {
+            display: flex;
+            flex-direction: column;
+            margin-top: 5em;
             background-color: $background-grey-1;
-            padding: 18px;
-            h2 {
-                padding-left: 6px;
+            padding: 2em 0em 3em 0em;
+            @media screen and (min-width: 1024px) {
+               padding-left: 5em;
+               padding-right: 5em;
             }
-            a {
-                height: 251px;
-                text-decoration: none;
-                .card {
-                    height: 100%;
-                    margin-bottom: 20px;
-                    display: grid;
-                    &_content {
-                        grid-area: 2 / 1 / 3 / 3;
-                        padding-left: 13px;
-                        border-bottom-left-radius: 20px;
-                        border-bottom-right-radius: 20px;
-                        background-color: #FFFFFF;
-                    }
-                    &_txt {
-                        color: black;
-                    }
-                    .new{
-                        grid-area: 1/2;
-                        background-color: $new-background;
-                        width: 60px;
-                        height: 15px;
-                        text-align: center;
-                        padding: 7px;
-                        margin:  13px  auto;
-                        border-radius: 3px;
-                        font-size: 14px;
-                        font-weight: bold;
-                        color: $new-text;
-                        margin-right: 15px;
-                    }
-                    .coeur{
-                        grid-area: 2/2/3/3;
-                        margin-left: 230px;
-                        margin-top: 17px;
-                    }
+        
+            &__title {
+                padding-left: 2em;
+            }
+        
+            &__card {
+                border-radius: 2em;
+                margin: 1em;
+                position: relative;
+                background: #ffffff;
+                height: 16em;
+            }
+        
+            &_image {
+                object-fit: cover;
+                border-top-left-radius: 2em;
+                border-top-right-radius: 2em;
+                width: 100%;
+                height: 100%;
+                max-height: 11em;
+            }
+        
+            &_name {
+                padding-left: 1.25em;
+                display: flex;
+                h3 {
+                    display: flex; 
+                    align-items:center; 
                 }
-                .card_txt h3 {
-                    margin-bottom: 0;
+                i {
+              right: 1em;
                 }
-                .card_txt p {
-                    margin-top: 0;
-                }
-                .card img{
-                    grid-area: 1/1/2/3;
-                    width: 100%;
-                    height: 140px;
-                    object-fit: cover;
-                    border-top-left-radius: 20px;
-                    border-top-right-radius: 20px;
-                }
-                .restaurant_card {
-                    display: flex;
-                    flex-direction: column;
-                    box-sizing: border-box;
-                }
+                
+            }
+        }
+        
+        .restaurant_name h3{
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+        .subtile_card p{
+            font-size: 17px ;
+            font-weight: 300;
+        }
+        
+        
+        .new {
+            color:$new-text;
+            background-color: $new-background;
+            border: 5px solid $new-background;
+            border-radius: 5px;
+            position: absolute;
+            right: 5%;
+            top: 5%;
+            width: 60px;
+        }
+        
+        .subtile_card {
+            padding-left: 1.25em;
+        }
+        
+        .restaurant_descript {
+            line-height: 0;
+        }
+        
+        .restaurants_container {
+            box-sizing: border-box;
+        
+            @media screen and (min-width: 1024px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     }
@@ -177,9 +197,9 @@ body{
             padding-top: 10px;
             margin-left: 1rem;
         }
-        .coeur{
-            grid-area: 1 / 2 / 2 / 3;
-            top: 35%;
+        i{
+            right: auto;
+            padding-left: 1em;
         }
     }
     section{
@@ -296,27 +316,6 @@ body{
                     }
                 }
             }
-            #restaurant{
-                padding-left: 180px;
-                padding-right: 180px;
-                .restaurant_card{
-                    display: flex;
-                    justify-content: space-between;
-                    flex-flow: row wrap;
-                    a{
-                        width: 45%;
-                        margin-bottom: 50px;
-                        .card{
-                            img{
-                                height: 172px;
-                            }
-                            .coeur{
-                                margin-left: 70%;
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
     .top-page{
@@ -332,10 +331,6 @@ body{
                 display: flex;
                 justify-content: center;
                 padding: 25px 0px 25px 0px;
-                .coeur-place{
-                    margin-top: 15px;
-                    margin-left: 30px
-                }
             }
             .space-around{
                 margin-left: 210px;
