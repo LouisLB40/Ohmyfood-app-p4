@@ -97,11 +97,9 @@ body{
                padding-left: 5em;
                padding-right: 5em;
             }
-        
             &__title {
                 padding-left: 2em;
             }
-        
             &__card {
                 border-radius: 2em;
                 margin: 1em;
@@ -109,7 +107,6 @@ body{
                 background: #ffffff;
                 height: 16em;
             }
-        
             &_image {
                 object-fit: cover;
                 border-top-left-radius: 2em;
@@ -118,7 +115,6 @@ body{
                 height: 100%;
                 max-height: 11em;
             }
-        
             &_name {
                 padding-left: 1.25em;
                 display: flex;
@@ -132,18 +128,14 @@ body{
                 
             }
         }
-        
         .restaurant_name h3{
             font-size: 18px;
             font-weight: 700;
         }
-        
         .subtile_card p{
             font-size: 17px ;
             font-weight: 300;
         }
-        
-        
         .new {
             color:$new-text;
             background-color: $new-background;
@@ -154,15 +146,12 @@ body{
             top: 5%;
             width: 60px;
         }
-        
         .subtile_card {
             padding-left: 1.25em;
         }
-        
         .restaurant_descript {
             line-height: 0;
         }
-        
         .restaurants_container {
             box-sizing: border-box;
         
@@ -191,7 +180,7 @@ body{
         display: grid;
         grid-template-columns: 4fr 1fr;
         grid-template-rows: 1fr;
-        h1{
+        h2{
             font-family: $font-title;
             font-size: 26px;
             padding-top: 10px;
@@ -202,12 +191,20 @@ body{
             padding-left: 1em;
         }
     }
+    .first-slide{
+        animation: slidefood 3s 1s both;
+    }
+    .second-slide{
+        animation: slidefood 3s 2s both;
+    }
+    .third-slide{
+        animation: slidefood 3s 3s both;
+    }
     section{
         margin: 0 10px 0 10px;
         margin-bottom: 40px;
-        animation: slidefood 3s;
         .entree{
-            h2{
+            h3{
                 font-family: $font-text;
                 font-size: 16px;
                 font-style: normal;

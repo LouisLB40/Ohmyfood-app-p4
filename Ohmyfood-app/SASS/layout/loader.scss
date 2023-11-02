@@ -1,12 +1,12 @@
-@import '../themes/color.css';
+@import '../themes/color.scss';
 @import '../themes/font.scss';
 
-.section {
+.loader-container {
     opacity: 0;
     z-index: -1;
     position: absolute;
     font-family: "Shrikhand", cursive;
-    background-image: linear-gradient(to bottom, #9656DC, #FF79DA);
+    background-image: linear-gradient(to bottom, $primary-color, $secondary-color);
     height: 100%;
     width: 100%;
     line-height: 800px;
